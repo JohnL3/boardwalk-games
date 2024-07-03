@@ -75,24 +75,43 @@ h2 {
     background-color: transparent;
 }
 
+#new-games .card,
+#fav-games .card,
 #services .card {
     margin-bottom: 1.5rem;
 }
 
+#fav-games .card,
+#fav-games .card *,
+#new-games .card,
+#new-games .card * {
+    border: none;
+    background-color: transparent;
+}
 
 /* media queries */
 
 /* medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     /* make all service cards the same height for consistency */
+    #new-games .card-body,
     #services .card-body {
         min-height: 191px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* make all service cards the same height for consistency */
+    #fav-games .card-body {
+        min-height: 220px;
     }
 }
 
 /* large devices (desktop, 992px and up) */
 @media screen and (min-width: 992px) {
     /* make all service cards the same height for consistency */
+    #new-games .card-body,
+    #fav-games .card-body,
     #services .card-body {
         min-height: auto;
     }
@@ -101,16 +120,34 @@ h2 {
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     /* make all service cards the same height for consistency */
+    #new-games .card-body,
+    #fav-games .card-body,
     #services .card-body {
         min-height: 220px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
+    #fav-games .card-body{
+        min-height: 245px;
     }
 }
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     /* make all service cards the same height for consistency */
+    #new-games .card-body,
+    #fav-games .card-body,
     #services .card-body {
         min-height: 195px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
+    #fav-games .card-body {
+        min-height: 215px;
     }
 }
 
